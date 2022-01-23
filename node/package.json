@@ -1,0 +1,15 @@
+{
+    "name": "pfa-node",
+    "version": "1.0.0",
+    "main": "index.js",
+    "author": "Otavio Pinheiro",
+    "license": "MIT",
+    "scripts": {
+        "build": "tsc",
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "mysql": "^2.18.1"
+    }
+}
