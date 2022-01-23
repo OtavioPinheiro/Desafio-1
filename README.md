@@ -1,3 +1,12 @@
+<a href="https://github.com/OtavioPinheiro/Desafio-1/blob/master/LICENSE.md" alt="LICENSE">
+<img src="https://img.shields.io/badge/LICENSE-MIT-brightgreen"/></a>
+<a href="" alt="DOCKER">
+<img src="https://img.shields.io/badge/Desafio-DOCKER-blue"/></a>
+<a href="" alt="DOCKER">
+<img src="https://img.shields.io/badge/Desafio-FullCycle-yellow"/></a>
+
+[![](https://badgen.net/github/commits/OtavioPinheiro/Desafio-1)]()
+
 # Desafio 1 do PFA :whale:
 Primeiro desafio do PFA do curso *Full Cycle*.
 
