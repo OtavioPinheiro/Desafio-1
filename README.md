@@ -38,18 +38,20 @@ Crie um arquivo README.md especificando quais comandos precisamos executar para 
 
 # Execução dos *containers*
 Há duas maneiras de executar essa aplicação.
-A primeira maneira consiste em realizar o git clone deste projeto e seguir os passos descritos a seguir. Para que a aplicação funcione é necessário executar os comandos na ordem:
+
+### A primeira maneira consiste em realizar o `git clone` deste projeto e seguir os passos descritos a seguir. Para que a aplicação funcione é necessário executar os comandos na ordem:
+1. `docker network create pfa-net`
+2. `docker build -t 171793/pfa-mysql`
+3. `docker run --name pfa-mysql --init -dit --network pfa-net -v ${pwd}/mysql/data:/var/lib/mysql 171793/pfa-mysql`
+4. `docker build -t 171793/pfa-node`
+5. `docker run --name pfa-node --init -dit --network pfa-net -v ${pwd}/node:/home/node/app -v /home/node/app/node_modules 171793/pfa-node`
+6. `docker build -t 171793/pfa-nginx`
+7. `docker run --name pfa-nginx --init -dit --network pfa-net -p 8080:80 171793/pfa-nginx`
+8. Acessar o browser em `localhost:8080`
+
+### A segunda maneira consiste em acessar as imagens geradas desse projeto por meio do Docker Hub. Desta forma temos:
 1. `docker network create pfa-net`
 2. `docker run --name pfa-mysql --init -dit --network pfa-net -v ${pwd}/mysql/data:/var/lib/mysql 171793/pfa-mysql`
 3. `docker run --name pfa-node --init -dit --network pfa-net -v ${pwd}/node:/home/node/app -v /home/node/app/node_modules 171793/pfa-node`
 4. `docker run --name pfa-nginx --init -dit --network pfa-net -p 8080:80 171793/pfa-nginx`
 5. Acessar o browser em `localhost:8080`
-
-A segunda maneira consiste em acessar as imagens geradas desse projeto por meio do Docker Hub. Desta forma temos:
-1. `docker network create pfa-net`
-2. `docker build -t 171793/pfa-mysql`
-3. `docker run 171793/pfa-mysql`
-4. `docker build -t 171793/pfa-node`
-5. `docker run 171793/pfa-node`
-6. `docker build -t 171793/pfa-nginx`
-7. `docker run 171793/pfa-nginx`
