@@ -3,9 +3,10 @@
 <a href="" alt="FullCycle">
 <img src="https://img.shields.io/badge/Desafio-FullCycle-yellow"/></a>
 <a href="" alt="DOCKER">
-<img src="https://img.shields.io/badge/Desafio-DOCKER-blue"/></a>
+<img src="https://badgen.net/badge/icon/docker?icon=docker&label"/></a>
 
-[![](https://badgen.net/github/commits/OtavioPinheiro/Desafio-1)]()
+[![](https://badgen.net/github/commits/OtavioPinheiro/Desafio-1)](https://github.com/OtavioPinheiro/Desafio-1/commits)
+[![](https://img.shields.io/badge/JavaScript-83%-orange)]()
 
 # Desafio 1 do PFA :whale:
 Primeiro desafio do PFA do curso *Full Cycle*.
