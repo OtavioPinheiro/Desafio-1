@@ -15,6 +15,7 @@ Primeiro desafio do PFA do curso *Full Cycle*.
 - [Descrição](#descrição)
 - [Dicas](#dicas)
 - [Execução](#execução-dos-containers)
+- [Observações](#observações)
 
 ## Descrição
 Crie um programa utilizando sua linguagem de programação favorita que faça uma listagem simples do nome de alguns módulos do curso *Full Cycle* os trazendo de um banco de dados MySQL. Gere a imagem desse container e a publique no DockerHub.
@@ -55,3 +56,6 @@ Há duas maneiras de executar essa aplicação.
 3. `docker run --name pfa-node --init -dit --network pfa-net -v ${pwd}/node:/home/node/app -v /home/node/app/node_modules 171793/pfa-node`
 4. `docker run --name pfa-nginx --init -dit --network pfa-net -p 8080:80 171793/pfa-nginx`
 5. Acessar o browser em `localhost:8080`
+
+## Observações
+- No comando descrito acima, a parte `${pwd}` é para caso o Sistema Operacional seja Windows, caso seja Linux, troque por `$(pwd)`
